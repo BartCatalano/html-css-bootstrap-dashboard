@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark">
@@ -35,35 +37,83 @@
     </nav>
     <!-- /NAVBAR -->
 
-     <main>
+    <main>
         <!-- Area Compilativa -->
         <form action="">
-         <!-- Cognome e nome -->
-        <div class="container">
-            <div class="mt-2 fs-2">
-            <Strong class=>Nuovo Libro</Strong>
+
+            <div class="container">
+                <div class="mt-2 fs-2">
+                    <Strong class=>Nuovo Libro</Strong>
+                </div>
+                <!-- Cognome e nome autore -->
+                <div class="row">
+                    <div class="mb-3 col-6">
+                        <label for="firstname" class="form-label">Nome Autore</label>
+                        <input placeholder=" inserire nome Autore " type="text" class="form-control" id="Firstname"
+                            aria-describedby="First Name">
+                    </div>
+
+                    <div class="mb-3 col-6">
+                        <label for="Surtname" class="form-label">Nome Autore</label>
+                        <input placeholder=" inserire nome Autore " type="text" class="form-control" id="Surname"
+                            aria-describedby="Surname">
+                    </div>
+                </div>
+                <!-- /Cognome e nome -->
+                <!-- Titolo -->
+                <div class="mb-3">
+                    <label for="title" class="form-label">Titolo</label>
+                    <input placeholder="Inserisci titolo del libro" type="text" class="form-control" id="title"
+                        aria-describedby="title">
+                    <div id="title" class="form-text">Titolo versione Italiana</div>
+                </div>
+
+                <!-- /Titolo -->
+                <!-- Area genere anno -->
+                <div class="row mb-3">
+                    <!-- COLONNA GENERE -->
+                    <div class=" mb-3 col-12 col-md-4">
+                        <label for="genere" class="form-label">Genere</label>
+                        <select class="form-select" aria-label="Genere">
+                            <option selected>Scegli il genere</option>
+                            <option value="1">Fantasy</option>
+                            <option value="2">Biografia</option>
+                            <option value="3">Poliziesco</option>
+                        </select>
+                    </div>
+                    <!-- /COLONNA GENERE -->
+                     <!-- Colonna anndo -->
+                      <div class="mb-3 col-12 col-md-4">
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Anno Di Pubblicazione</label>
+                            <input type="text" class="form-control" id="date" placeholder="Inserisci anno">
+                          </div>
+                      </div>
+                      <!-- /Colonna anndo -->
+                       <!-- COLONNA ISBN -->
+                       <div class="mb-3 col-12 col-md-4">
+                        <div class="mb-3">
+                            <label for="isbn" class="form-label">ISBN#</label>
+                            <input type="text" class="form-control" id="isbn" placeholder="Inserisci il codice isbn#">
+                          </div>
+                      </div>
+                        <!-- COLONNA ISBN -->
+                         <hr>
+                         <!-- AREA NOTE -->
+                         <div class="mb-3">
+                            <label for="note" class="form-label">Note</label>
+                            <textarea placeholder="Inserisci eventuali note sul libro" class="form-control" id="note" rows="3"></textarea>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="digital">
+                            <label class="form-check-label" for="digita"> Disponibile anche in digitale
+                          <!-- /AREA NOTE -->
+                </div>
             </div>
-            
-            <div class="row">
-                <div class="mb-3 col-6">
-                    <label for="firstname" class="form-label">Nome Autore</label>
-                    <input placeholder=" inserire nome Autore " type="text" class="form-control" id="Firstname" aria-describedby="First Name">
-                  </div>
-            
-            <div class="mb-3 col-6">
-                <label for="Surtname" class="form-label">Nome Autore</label>
-                <input placeholder=" inserire nome Autore " type="text" class="form-control" id="Surname" aria-describedby="Surname">
-              </div>
-        </div>
-        <!-- /Cognome e nome -->
-         <!-- Titolo -->
-
-          <!-- /Titolo -->
-
-        </div>
-    </form>
+        </form>
         <!-- /Area Compilativa -->
-     </main>
-    
+    </main>
+
 </body>
+
 </html>
