@@ -22,7 +22,7 @@
     <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="./img/duck.png" alt="Bootstrap" width="40" height="40">
+                <img src="./img/duck.png" alt="Logo Duck" width="40" height="40">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,91 +40,97 @@
         </div>
     </nav>
     <!-- /NAVBAR -->
-
-    <!-- Header -->
-    <div class="m-2 d-flex justify-content-between">
-        <strong>Catalogo Libri</strong>
-        <button class="btn btn-primary btn-sm me-md-2" type="submit">Aggiungi Libro</button>
-    </div>
-    <!-- Header -->
-    <!-- Lista Centrale -->
-     <!-- TITOLI -->
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th scope="col">Titolo</th>
-                <th scope="col" class="d-none d-md-table-cell">Data Prestito</th>
-                <th scope="col">Stato</th>
-                <th scope="col">Azioni</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- PRIMA LISTA -->
-            <tr>
-                <td>I Pilastri della terra</td>
-                <td class="d-none d-md-table-cell">-</td>
-                <td><span class="badge bg-success">Disponibile</span></td>
-                <td> <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                            class="fa-solid fa-pencil"></i></button>
-                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash-can"></i>
-                    </button>
-                </td>
-            </tr>
-            <!-- SECONDA LISTA -->
-            <tr>
-                <td>I Promessi Sposi</td>
-                <td class="d-none d-md-table-cell">-</td>
-                <td><span class="badge bg-success">Disponibile</span></td>
-                <td> <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                            class="fa-solid fa-pencil"></i></button>
-                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash-can"></i>
-                    </button>
-                </td>
-            </tr>
-            <!-- TERZA LISTA -->
-            <tr>
-                <td>Il Signore degli anelli</td>
-                <td class="d-none d-md-table-cell">18/10/2023</td>
-                <td><span class="badge bg-warning">In Prestito</span></td>
-                <td> <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                            class="fa-solid fa-pencil"></i></button>
-                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash-can"></i>
-                    </button>
-                </td>
-            </tr>
-             <!-- QUARTA LISTA -->
-             <tr>
-                <td>Harry potter e la pietra filosofale</td>
-                <td class="d-none d-md-table-cell">-</td>
-                <td><span class="badge bg-success">Disponibile</span></td>
-                <td> <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                            class="fa-solid fa-pencil"></i></button>
-                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash-can"></i>
-                    </button>
-                </td>
-            </tr>
-              <!-- QUINDTA LISTA -->
-              <tr>
-                <td>Il Codice Da Vinci</td>
-                <td class="d-none d-md-table-cell">-</td>
-                <td><span class="badge bg-danger">Non Disponibile</span></td>
-                <td> <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                            class="fa-solid fa-pencil"></i></button>
-                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash-can"></i>
-                    </button>
-                </td>
-            </tr>
-               <!-- SESTA LISTA -->
-               <tr>
-                <td>Shining</td>
-                <td class="d-none d-md-table-cell">-</td>
-                <td><span class="badge bg-success">Disponibile</span></td>
-                <td> <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                            class="fa-solid fa-pencil"></i></button>
-                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash-can"></i>
-                    </button>
-                </td>
-            </tr>
+    <main class="container">
+        <!-- Header -->
+        <div class="m-2 d-flex justify-content-between">
+            <strong>Catalogo Libri</strong>
+            <button class="btn btn-primary btn-sm me-md-2" type="submit">Aggiungi Libro</button>
+        </div>
+        <!-- Header -->
+        <!-- Lista Centrale -->
+        <!-- TITOLI -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Titolo</th>
+                    <th scope="col" class="d-none d-md-table-cell">Data Prestito</th>
+                    <th scope="col">Stato</th>
+                    <th scope="col">Azioni</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- PRIMA LISTA -->
+                <tr>
+                    <td>I Pilastri della terra</td>
+                    <td class="d-none d-md-table-cell">-</td>
+                    <td><span class="badge bg-success">Disponibile</span></td>
+                    <td class="text-nowrap"> <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                                class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                                class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </td>
+                </tr>
+                <!-- SECONDA LISTA -->
+                <tr>
+                    <td>I Promessi Sposi</td>
+                    <td class="d-none d-md-table-cell">-</td>
+                    <td><span class="badge bg-success">Disponibile</span></td>
+                    <td> <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                                class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                                class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </td>
+                </tr>
+                <!-- TERZA LISTA -->
+                <tr>
+                    <td>Il Signore degli anelli</td>
+                    <td class="d-none d-md-table-cell">18/10/2023</td>
+                    <td><span class="badge bg-warning">In Prestito</span></td>
+                    <td> <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                                class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                                class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </td>
+                </tr>
+                <!-- QUARTA LISTA -->
+                <tr>
+                    <td>Harry potter e la pietra filosofale</td>
+                    <td class="d-none d-md-table-cell">-</td>
+                    <td><span class="badge bg-success">Disponibile</span></td>
+                    <td> <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                                class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                                class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </td>
+                </tr>
+                <!-- QUINDTA LISTA -->
+                <tr>
+                    <td>Il Codice Da Vinci</td>
+                    <td class="d-none d-md-table-cell">-</td>
+                    <td><span class="badge bg-danger">Non Disponibile</span></td>
+                    <td> <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                                class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                                class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </td>
+                </tr>
+                <!-- SESTA LISTA -->
+                <tr>
+                    <td>Shining</td>
+                    <td class="d-none d-md-table-cell">-</td>
+                    <td><span class="badge bg-success">Disponibile</span></td>
+                    <td> <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                                class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                                class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </td>
+                </tr>
                 <!-- SETTIMA LISTA -->
                 <tr>
                     <td>La Divina Commedia</td>
@@ -132,70 +138,77 @@
                     <td><span class="badge bg-warning">In Prestito</span></td>
                     <td> <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                 class="fa-solid fa-pencil"></i></button>
-                        <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash-can"></i>
+                        <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                                class="fa-solid fa-trash-can"></i>
                         </button>
                     </td>
                 </tr>
-                 <!-- OTTAVA LISTA -->
-                 <tr>
+                <!-- OTTAVA LISTA -->
+                <tr>
                     <td>Il Trono di spade</td>
                     <td class="d-none d-md-table-cell">-</td>
                     <td><span class="badge bg-success">Disponibile</span></td>
                     <td> <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                 class="fa-solid fa-pencil"></i></button>
-                        <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash-can"></i>
+                        <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                                class="fa-solid fa-trash-can"></i>
                         </button>
                     </td>
                 </tr>
-                  <!-- NONA LISTA -->
-                  <tr>
+                <!-- NONA LISTA -->
+                <tr>
                     <td>Il Mondo di Sofia</td>
                     <td class="d-none d-md-table-cell">-</td>
                     <td><span class="badge bg-danger">Non Disponibile</span></td>
                     <td> <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                 class="fa-solid fa-pencil"></i></button>
-                        <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash-can"></i>
+                        <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                                class="fa-solid fa-trash-can"></i>
                         </button>
                     </td>
                 </tr>
-                   <!-- DECIMA LISTA -->
-                   <tr>
+                <!-- DECIMA LISTA -->
+                <tr>
                     <td>Le Cronache Di Narnia:il leone,la strega,l'armadio</td>
                     <td class="d-none d-md-table-cell">25/07/2023</td>
                     <td><span class="badge bg-warning">In Prestito</span></td>
                     <td> <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                 class="fa-solid fa-pencil"></i></button>
-                        <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash-can"></i>
+                        <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                                class="fa-solid fa-trash-can"></i>
                         </button>
                     </td>
                 </tr>
-                    <!-- UNDICESIMA LISTA -->
-                    <tr>
-                        <td>Il Piccolo principe</td>
-                        <td class="d-none d-md-table-cell">-</td>
-                        <td><span class="badge bg-success">Disponibile</span></td>
-                        <td> <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-pencil"></i></button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash-can"></i>
-                            </button>
-                        </td>
-                    </tr>
-                     <!-- DODICESIMA LISTA -->
-                     <tr>
-                        <td>La storia infinita</td>
-                        <td class="d-none d-md-table-cell">-</td>
-                        <td><span class="badge bg-success">Disponibile</span></td>
-                        <td> <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-pencil"></i></button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash-can"></i>
-                            </button>
-                        </td>
-                    </tr>
+                <!-- UNDICESIMA LISTA -->
+                <tr>
+                    <td>Il Piccolo principe</td>
+                    <td class="d-none d-md-table-cell">-</td>
+                    <td><span class="badge bg-success">Disponibile</span></td>
+                    <td> <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                                class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                                class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </td>
+                </tr>
+                <!-- DODICESIMA LISTA -->
+                <tr>
+                    <td>La storia infinita</td>
+                    <td class="d-none d-md-table-cell">-</td>
+                    <td><span class="badge bg-success">Disponibile</span></td>
+                    <td> <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                                class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                                class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </td>
+                </tr>
 
-        </tbody>
-    </table>
-    <!-- /Lista Centrale -->
-
+            </tbody>
+        </table>
+        <!-- /Lista Centrale -->
+    </main>
+    
 
 
 
